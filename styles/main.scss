@@ -39,17 +39,17 @@ html, body {
     background-color: rgba(0,0,0,.3);
   }
   &:first-child {
-    background-image: url(https://i.postimg.cc/kXq9Qmnj/bgd1.jpg);
+    background-image: url("../assets/matin.jpg");
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
       transform: translateY($parallax-offset /2);
     }
   }
   &:nth-child(2) {
-    background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
+    background-image: url("../assets/soir.jpg");
   }
   &:nth-child(3) {
-    background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
+    background-image: url("../assets/tressoir.jpg");
   }
 }
 
@@ -80,6 +80,7 @@ html, body {
     line-height: 1.4;
     @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));
   }
+
 // ------------- All title breakpoints ------------- //
     @media (max-width: 1200px){
         &-title{
@@ -131,6 +132,17 @@ html, body {
             font-size: 3.799em;
         }
     }
+}
+
+a{ 
+  text-decoration: none; 
+  color: inherit;
+  font-size: 3em;
+  transition: ease 0.3s;
+} 
+
+a:hover{
+  color: #1A91DA;
 }
 // ------------- SET TRANSFORM VALUES ------------- //
 
